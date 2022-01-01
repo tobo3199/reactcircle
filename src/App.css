@@ -38,9 +38,13 @@
 }
 
 .circle {
-  fill:none;
+  fill: none;
 }
 
 #box {
   height: 500px;
+}
+
+.range {
+  border-style: solid;
 }
