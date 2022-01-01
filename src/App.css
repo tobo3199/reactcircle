@@ -40,3 +40,7 @@
 .circle {
   fill:none;
 }
+
+#box {
+  height: 500px;
+}
