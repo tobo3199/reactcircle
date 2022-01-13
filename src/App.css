@@ -44,4 +44,5 @@
 #box {
   height: 750px;
   margin-left: 50px;
+  border: solid;
 }
