@@ -12,8 +12,8 @@ function App() {
     [325, 300],
     [200, 120],
     [250, 400],
-    [150, 100]
-    /*[400, 100],
+    [150, 100],
+    [400, 100],
     [450, 325],
     [220, 380],
     [500, 480],
@@ -22,7 +22,7 @@ function App() {
     [160, 410],
     [280, 380],
     [122, 378]
-*/
+
 
   ]
 
@@ -103,11 +103,10 @@ function App() {
     let z = 0;
     let counter = 0;
 
-    cordinates.forEach(console.log)
 
-    for (x; x <= 2; x++) {
-      for (y = x + 1; y <= 3; y++) {
-        for (z = y + 1; z <= 4; z++) {
+    for (x; x <= 11; x++) {
+      for (y = x + 1; y <= 12; y++) {
+        for (z = y + 1; z <= 13; z++) {
           counter = counter + 1;
           console.log("x: " + x + "y: " + y + "z: " + z + "counter: " + counter)
 
@@ -129,6 +128,8 @@ function App() {
             console.log("----------------------------------")
             if (radius1 < r1) {
               r1 = radius1;
+              setXResult(x4);
+              setYResult(y4);
 
             }
           }
@@ -139,8 +140,7 @@ function App() {
 
 
     setRadiusResult(r1);
-    setXResult(x4);
-    setYResult(y4);
+
 
     console.log(r1)
 
@@ -158,7 +158,7 @@ function App() {
 
   function InRange(x4, y4, radius1) {
 
-    for (let x = 0; x < 5; x++) {
+    for (let x = 0; x < 13; x++) {
       let abstand = Math.sqrt((cordinates[x][0] - x4) * (cordinates[x][0] - x4) + (cordinates[x][1] - y4) * (cordinates[x][1] - y4));
       console.log("abstand: " + abstand)
 
@@ -189,7 +189,7 @@ function App() {
         <circle cx={cordinates[4][0]} cy={cordinates[4][1]} r="5" stroke="black" fill="" className="circle"
         />
 
-        {/*
+
         <circle cx={cordinates[5][0]} cy={cordinates[5][1]} r="5" stroke="black" fill="" className="circle"
         />
         <circle cx={cordinates[6][0]} cy={cordinates[6][1]} r="5" stroke="black" fill="" className="circle"
@@ -206,7 +206,7 @@ function App() {
         />
         <circle cx={cordinates[12][0]} cy={cordinates[12][1]} r="5" stroke="black" fill="" className="circle"
         />
-*/}
+
         <Paint onClick={bruteForce}></Paint>
 
 
