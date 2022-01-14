@@ -42,7 +42,11 @@
 }
 
 #box {
-  height: 750px;
+  height: 650px;
   margin-left: 50px;
   border: solid;
+}
+
+#mittelpunkt {
+  fill: red;
 }
